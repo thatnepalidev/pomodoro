@@ -1,7 +1,5 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,7 +9,7 @@ body {
 .container {
     display: flex;
     gap: 2rem;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -288,4 +286,85 @@ button:hover, .popup-btn:hover {
     color: #718096;
     font-weight: 500;
     opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 1rem auto;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .timer-container, .music-container {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    #timer {
+        font-size: 3.5rem;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .buttons {
+        gap: 0.5rem;
+    }
+
+    button {
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+        width: 80px;
+    }
+
+    .credit {
+        position: relative;
+        text-align: center;
+        margin-top: 2rem;
+        bottom: 0;
+        right: 0;
+    }
+
+    body {
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .timer-container, .music-container {
+        padding: 1rem;
+    }
+
+    #timer {
+        font-size: 3rem;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    button {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        width: 70px;
+    }
+
+    .music-container h3 {
+        font-size: 1.1rem;
+    }
+
+    #songSelect {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
 }
