@@ -279,3 +279,13 @@ button:hover, .popup-btn:hover {
     font-weight: 500;
     width: 120px;
 }
+
+.credit {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 500;
+    opacity: 0.8;
+}
