@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 Minute Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <div id="timer">25:00</div>
+            <div class="buttons">
+                <button id="startBtn">Start</button>
+                <button id="resetBtn">Reset</button>
+                <button id="breakBtn">Break</button>
+            </div>
+        </div>
+        
+        <div class="music-container">
+            <h3>Background Music</h3>
+            <div class="music-controls">
+                <select id="songSelect" placeholder="Select a song"></select>
+                <div class="player-controls">
+                    <button id="playBtn"></button>
+                    <div class="slider-container">
+                        <input type="range" id="progressSlider" min="0" max="100" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popup-message"></p>
+            <button id="popup-ok" class="popup-btn">Okay</button>
+        </div>
+    </div>
+
+    <div id="youtube-player" style="position: absolute; left: -9999px;"></div>
+    <div id="alarm-player" style="position: absolute; left: -9999px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
