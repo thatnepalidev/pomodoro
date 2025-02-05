@@ -4,16 +4,13 @@ let isBreakSession = false;
 let player = null;
 let alarmPlayer = null;
 
-function onYouTubeIframeAPIReady() {
-    console.log('YouTube API Ready');
-}
-
 const timerDisplay = document.getElementById('timer');
 const startBtn = document.getElementById('startBtn');
 const resetBtn = document.getElementById('resetBtn');
 const breakBtn = document.getElementById('breakBtn');
-const WORK_TIME = 25 * 60;
-const BREAK_TIME = 5 * 60;
+
+const WORK_TIME = 25 * 60;  // 25 minutes
+const BREAK_TIME = 5 * 60;   // 5 minutes
 const playBtn = document.getElementById('playBtn');
 const songSelect = document.getElementById('songSelect');
 const progressSlider = document.getElementById('progressSlider');
@@ -29,6 +26,7 @@ function updateDisplay() {
     timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
+// Core timer logic - handles countdown and state changes
 function startTimer() {
     if (timerId === null) {
         timerId = setInterval(() => {
@@ -73,6 +71,7 @@ function resetTimer() {
     isBreakSession = false;
 }
 
+// Add or modify music options here
 function loadMusicOptions() {
     const musicOptions = [
         { name: "Classical I", videoId: "ci7AqbLpm4M" },
@@ -163,12 +162,13 @@ function updateProgressBar() {
     }
 }
 
+// Change alarm sound by updating this videoId
 function playAlarm() {
     if (!alarmPlayer) {
         alarmPlayer = new YT.Player('alarm-player', {
             height: '0',
             width: '0',
-            videoId: 'kcT-i9xzC-8',
+            videoId: 'kcT-i9xzC-8',  // YouTube video ID for alarm sound
             playerVars: {
                 'autoplay': 1,
                 'controls': 0
