@@ -1,8 +1,11 @@
 # Pomodoro Timer with Music Player
 
 ## Overview
-I created a Pomodoro Timer to help improve studying and focus using the Pomodoro Technique. The timer breaks work into focused sessions—typically 25 minutes—followed by short 5-minute breaks to prevent burnout and maintain productivity
+I created a Pomodoro Timer to help improve studying and focus using the Pomodoro Technique. The timer breaks work into focused sessions—typically 25 minutes—followed by short 5-minute breaks to prevent burnout and maintain productivity.
 
+## How to Use
+For a productivity boost, [Click here](https://uniqueacharya.github.io/pomodoro/) to give it a try.
+ 
 ## Features
 - ⏲️ **25-Minute Timer**: Standard Pomodoro session length for optimal productivity
 - 🎵 **Music Player**: Built-in audio player with your choice of background music
@@ -15,10 +18,6 @@ I created a Pomodoro Timer to help improve studying and focus using the Pomodoro
 ## Demo
 ![image](https://github.com/user-attachments/assets/0a2731f0-a389-498e-b369-73754750bb7e)
 ![image](https://github.com/user-attachments/assets/cc428f20-dad8-4e3c-b11d-a9d4f26b5706)
-
-
-## Installation
-1. Clone the repository: git clone https://github.com/uniqueacharya/pomodoro.git
 
 ## Usage
 1. **Start a Work Session**:
@@ -43,5 +42,3 @@ I created a Pomodoro Timer to help improve studying and focus using the Pomodoro
 ## Author
 - GitHub: [@uniqueacharya](https://github.com/uniqueacharya)
 - LinkedIn: [@unique-acharya](https://linkedin.com/in/unique-acharya)
-
-Made with ❤️ by Unique Acharya
