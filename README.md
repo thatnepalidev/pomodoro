@@ -12,7 +12,7 @@ For a productivity boost, [Click here](https://uniqueacharya.github.io/pomodoro/
 - 🎨 **Modern UI**: Clean and responsive design
 - ⏸️ **Pause, Resume and Reset**: Flexible control over your work sessions, Quick reset to start fresh.
 - ☕ **Break Timer**: 5-minute break sessions
-- 💻 **Device Compatibility**: Works with any devices such as Smartphones, Tablets, and Desktops
+- 💻 **Device Compatibility**: Works on any Desktop devices and Tablets (Desktop mode to use on a smartphone).
 
 ## Demo
 ![image](https://github.com/user-attachments/assets/0a2731f0-a389-498e-b369-73754750bb7e)
