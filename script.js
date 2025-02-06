@@ -15,10 +15,14 @@ const playBtn = document.getElementById('playBtn');
 const songSelect = document.getElementById('songSelect');
 const progressSlider = document.getElementById('progressSlider');
 
-
 const popup = document.getElementById('popup');
 const popupMessage = document.getElementById('popup-message');
 const popupOk = document.getElementById('popup-ok');
+
+// Add these at the top with other DOM element selections
+const taskInput = document.getElementById('taskInput');
+const addTaskBtn = document.getElementById('addTaskBtn');
+const tasksList = document.getElementById('tasksList');
 
 function updateDisplay() {
     const minutes = Math.floor(timeLeft / 60);
@@ -74,11 +78,10 @@ function resetTimer() {
 // Add or modify music options here
 function loadMusicOptions() {
     const musicOptions = [
-        { name: "Classical I", videoId: "ci7AqbLpm4M" },
-        { name: "Classical II", videoId: "3ZltabzNSDs" },
-        { name: "Classical III", videoId: "bis3S_CeE04" },
-        { name: "White Noise", videoId: "nMfPqeZjc2c" },
-        { name: "Ancient Greece", videoId: "tAKAkhwEf0M" }
+        { name: "Classical I - 2 Hours", videoId: "o_4cEfuyNFo" },
+        { name: "Classical II - 3 Hours", videoId: "R0kl9xFVSnI" },
+        { name: "White Noise - 10 Hours", videoId: "nMfPqeZjc2c" },
+        { name: "Ancient Greece - 1 Hour", videoId: "ugdm-wci_Q4" },
     ];
 
     const placeholder = document.createElement('option');
@@ -249,3 +252,43 @@ progressSlider.addEventListener('input', () => {
 });
 
 loadMusicOptions();
+
+// Add these functions at the bottom before the event listeners
+function addTask() {
+    const taskText = taskInput.value.trim();
+    if (taskText) {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <div class="task-content">
+                <span class="task-text">${taskText}</span>
+                <button class="task-btn delete-btn">×</button>
+            </div>
+        `;
+        
+        // Add event listeners for the buttons
+        const deleteBtn = li.querySelector('.delete-btn');
+        const taskContent = li.querySelector('.task-content');
+        
+        taskContent.addEventListener('click', (e) => {
+            // Don't toggle if clicking the delete button
+            if (!e.target.classList.contains('delete-btn')) {
+                taskContent.classList.toggle('completed');
+            }
+        });
+        
+        deleteBtn.addEventListener('click', () => {
+            li.remove();
+        });
+        
+        tasksList.appendChild(li);
+        taskInput.value = '';
+    }
+}
+
+// Add these event listeners with the others at the bottom
+addTaskBtn.addEventListener('click', addTask);
+taskInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        addTask();
+    }
+});
