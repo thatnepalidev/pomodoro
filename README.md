@@ -9,11 +9,10 @@ For a productivity boost, [Click here](https://uniqueacharya.github.io/pomodoro/
 ## Features
 - ⏲️ **25-Minute Timer**: Standard Pomodoro session length for optimal productivity
 - 🎵 **Music Player**: Built-in audio player with your choice of background music
-- ⏸️ **Pause & Resume**: Flexible control over your work sessions
-- 🔄 **Reset Function**: Quick reset to start fresh
-- ☕ **Break Timer**: 5-minute break sessions
-- 🔔 **Alert System**: Visual and audio notifications when sessions end
 - 🎨 **Modern UI**: Clean and responsive design
+- ⏸️ **Pause, Resume and Reset**: Flexible control over your work sessions, Quick reset to start fresh.
+- ☕ **Break Timer**: 5-minute break sessions
+- 💻 **Device Compatibility**: Works with any devices such as Smartphones, Tablets, and Desktops
 
 ## Demo
 ![image](https://github.com/user-attachments/assets/0a2731f0-a389-498e-b369-73754750bb7e)
