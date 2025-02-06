@@ -15,8 +15,8 @@ For a productivity boost, [Click here](https://uniqueacharya.github.io/pomodoro/
 - 💻 **Device Compatibility**: Works on any Desktop devices and Tablets (Desktop mode to use on a smartphone).
 
 ## Demo
-![image](https://github.com/user-attachments/assets/0a2731f0-a389-498e-b369-73754750bb7e)
-![image](https://github.com/user-attachments/assets/cc428f20-dad8-4e3c-b11d-a9d4f26b5706)
+![image](https://github.com/user-attachments/assets/3fa3cba4-51b4-4c97-adba-182760d2cc42)
+![image](https://github.com/user-attachments/assets/1bdf08c1-7566-40a6-94c4-51c67de5ef7a)
 
 ## Usage
 1. **Start a Work Session**:
