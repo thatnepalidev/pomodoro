@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Timer</title>
+    <title>Pomodoro</title>
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/6853/6853059.png">
     <link rel="stylesheet" href="styles.css">
     <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
     <div class="container">
-        <div class="timer-container">
-            <div id="timer">25:00</div>
-            <div class="buttons">
-                <button id="startBtn">Start</button>
-                <button id="resetBtn">Reset</button>
-                <button id="breakBtn">Break</button>
+        <div class="left-container">
+            <div class="timer-container">
+                <div id="timer">25:00</div>
+                <div class="buttons">
+                    <button id="startBtn">Start</button>
+                    <button id="resetBtn">Reset</button>
+                    <button id="breakBtn">Break</button>
+                </div>
             </div>
-        </div>
-        
-        <div class="music-container">
-            <h3>Background Music</h3>
-            <div class="music-controls">
-                <select id="songSelect" placeholder="Select a song"></select>
-                <div class="player-controls">
-                    <button id="playBtn"></button>
-                    <div class="slider-container">
-                        <input type="range" id="progressSlider" min="0" max="100" value="0">
+            
+            <div class="music-container">
+                <h3>Background Music</h3>
+                <div class="music-controls">
+                    <select id="songSelect" placeholder="Select a song"></select>
+                    <div class="player-controls">
+                        <button id="playBtn"></button>
+                        <div class="slider-container">
+                            <input type="range" id="progressSlider" min="0" max="100" value="0">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="tasks-container">
+            <h3>Tasks</h3>
+            <div class="tasks-list">
+                <div class="task-input-container">
+                    <input type="text" id="taskInput" placeholder="Add a new task...">
+                    <button id="addTaskBtn">Add</button>
+                </div>
+                <ul id="tasksList"></ul>
             </div>
         </div>
     </div>
