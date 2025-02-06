@@ -12,6 +12,7 @@ For a productivity boost, [Click here](https://uniqueacharya.github.io/pomodoro/
 - 🎨 **Modern UI**: Clean and responsive design
 - ⏸️ **Pause, Resume and Reset**: Flexible control over your work sessions, Quick reset to start fresh.
 - ☕ **Break Timer**: 5-minute break sessions
+- ✅ **To-Do Task List**: Add and manage tasks to stay organized and track progress
 - 💻 **Device Compatibility**: Works on any Desktop devices and Tablets (Desktop mode to use on a smartphone).
 
 ## Demo
@@ -32,6 +33,11 @@ For a productivity boost, [Click here](https://uniqueacharya.github.io/pomodoro/
 3. **Break Time**:
    - Click "Break" to start a 5-minute break session
    - An alert will notify you when your session ends
+
+4. **To-Do Task List**:
+   - Add new tasks to your list
+   - Mark completed tasks to track your progress
+   - Remove or edit tasks as needed
 
 ## Frontend
   - HTML5
