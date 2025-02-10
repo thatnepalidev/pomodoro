@@ -78,6 +78,7 @@ function resetTimer() {
 // Add or modify music options here
 function loadMusicOptions() {
     const musicOptions = [
+        { name: "Chill Playlist - 30 minutes", videoId: "Uy1XHMEkKGA"},
         { name: "Classical I - 2 Hours", videoId: "o_4cEfuyNFo" },
         { name: "Classical II - 3 Hours", videoId: "R0kl9xFVSnI" },
         { name: "White Noise - 10 Hours", videoId: "nMfPqeZjc2c" },
