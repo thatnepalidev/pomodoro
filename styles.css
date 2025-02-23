@@ -119,21 +119,23 @@ body {
     cursor: pointer;
     padding: 0.2rem;
     border-radius: 6px;
+    transition: opacity 0.2s;
 }
 
 .task-text {
     flex: 1;
     text-align: left;
     margin-right: 0.5rem;
+    transition: opacity 0.2s;
 }
 
 .task-content.completed .task-text {
     color: #808080;
+    text-decoration: line-through;
 }
 
 .task-content:not(.completed):hover .task-text {
-    text-decoration: line-through;
-    color: #808080;
+    opacity: 0.5;
 }
 
 .task-btn {
@@ -422,8 +424,6 @@ button:hover, .popup-btn:hover {
     right: 1rem;
     font-size: 0.9rem;
     color: #ffffff;
-    font-weight: 500;
-    opacity: 0.8;
 }
 
 .tasks-container h3, .music-container h3 {
