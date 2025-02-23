@@ -3,7 +3,9 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    position: relative;
 }
 
 .container {
@@ -27,14 +29,14 @@ body {
 .timer-container, .music-container, .tasks-container {
     text-align: center;
     padding: 2rem;
-    background-color: white;
+    background-color: #2c2c2e;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .tasks-container {
     flex: 1;
-    height: 380px;
+    height: 390px;
     text-align: left;
 }
 
@@ -53,23 +55,24 @@ body {
 #taskInput {
     padding: 0.8rem;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #3d3d3d;
     flex: 1;
-    color: #4a5568;
-    background-color: #f8fafc;
+    color: #ffffff;
+    background-color: #3a3a3c;
     font-size: 0.95rem;
     outline: none;
 }
 
 #taskInput:focus {
-    border: 1px solid #e2e8f0;
+    border: 1px solid #5c5c5e;
 }
 
 #addTaskBtn {
     width: 80px;
-    background-color: #c6f6d5;
+    background-color: #007aff;
     height: 45px;
     padding: 0;
+    color: #ffffff;
 }
 
 #tasksList {
@@ -80,7 +83,7 @@ body {
     overflow-y: auto;
     max-height: calc(100% - 60px);
     scrollbar-width: thin;
-    scrollbar-color: #cbd5e0 #f8fafc;
+    scrollbar-color: #cbd5e0 #3a3a3c;
 }
 
 #tasksList::-webkit-scrollbar {
@@ -88,14 +91,14 @@ body {
 }
 
 #tasksList::-webkit-scrollbar-track {
-    background: #f8fafc;
+    background: #3a3a3c;
     border-radius: 4px;
 }
 
 #tasksList::-webkit-scrollbar-thumb {
     background-color: #cbd5e0;
     border-radius: 4px;
-    border: 2px solid #f8fafc;
+    border: 2px solid #3a3a3c;
 }
 
 #tasksList::-webkit-scrollbar-thumb:hover {
@@ -125,22 +128,12 @@ body {
 }
 
 .task-content.completed .task-text {
-    color: #a0aec0;
+    color: #808080;
 }
 
 .task-content:not(.completed):hover .task-text {
     text-decoration: line-through;
-    color: #a0aec0;
-}
-
-.task-content.completed .task-text {
-    text-decoration: line-through;
-    color: #a0aec0;
-}
-
-.task-actions {
-    display: flex;
-    gap: 0.5rem;
+    color: #808080;
 }
 
 .task-btn {
@@ -156,14 +149,21 @@ body {
 }
 
 .delete-btn {
-    background-color: #fed7d7;
-    color: #c53030;
-    order: 3;
+    background-color: #ff3b30;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.task-btn:hover {
-    transform: translateY(-1px);
-    opacity: 0.9;
+.delete-btn:hover {
+    background-color: #c53030;
 }
 
 #timer {
@@ -171,11 +171,11 @@ body {
     margin-bottom: 1rem;
     height: 70px;
     line-height: 70px;
-    background-color: #f8fafc;
+    background-color: #3a3a3c;
     border-radius: 12px;
     padding: 0.5rem;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
-    color: #2d3748;
+    color: #ffffff;
 }
 
 .buttons {
@@ -190,7 +190,7 @@ button {
     font-size: 1.1rem;
     border: none;
     border-radius: 8px;
-    color: #2d3748;
+    color: #ffffff;
     cursor: pointer;
     transition: all 0.2s;
     width: 90px;
@@ -208,24 +208,20 @@ button:hover, .popup-btn:hover {
 }
 
 #startBtn {
-    background-color: #c6f6d5;
+    background-color: #007aff;
 }
 
 #startBtn.pause {
-    background-color: #bee3f8;
+    background-color: #333333;
 }
 
-#resetBtn {
-    background-color: #fed7d7;
-}
-
-#breakBtn {
-    background-color: #e9d8fd;
+#resetBtn, #breakBtn {
+    background-color: #007aff;
 }
 
 .music-container h3 {
     margin: 0 0 1rem 0;
-    color: #2d3748;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -238,10 +234,10 @@ button:hover, .popup-btn:hover {
 #songSelect {
     padding: 0.8rem;
     border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #3d3d3d;
     width: 100%;
-    color: #4a5568;
-    background-color: #f8fafc;
+    color: #ffffff;
+    background-color: #3a3a3c;
     font-size: 0.95rem;
 }
 
@@ -255,7 +251,7 @@ button:hover, .popup-btn:hover {
 
 #songSelect:focus {
     outline: none;
-    border-color: #e2e8f0;
+    border-color: #5c5c5e;
 }
 
 .player-controls {
@@ -267,7 +263,7 @@ button:hover, .popup-btn:hover {
 }
 
 #playBtn {
-    background-color: #c6f6d5;
+    background-color: #007aff;
     width: 45px;
     height: 45px;
     padding: 0;
@@ -315,7 +311,7 @@ button:hover, .popup-btn:hover {
     height: 4px;
     -webkit-appearance: none;
     appearance: none;
-    background: #e2e8f0;
+    background: #3d3d3d;
     border-radius: 2px;
     outline: none;
     cursor: pointer;
@@ -331,7 +327,7 @@ button:hover, .popup-btn:hover {
     -webkit-appearance: none;
     width: 12px;
     height: 12px;
-    background: #c6f6d5;
+    background: #007aff;
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid white;
@@ -342,7 +338,7 @@ button:hover, .popup-btn:hover {
 #progressSlider::-moz-range-thumb {
     width: 12px;
     height: 12px;
-    background: #c6f6d5;
+    background: #007aff;
     border-radius: 50%;
     cursor: pointer;
     border: 2px solid white;
@@ -384,7 +380,7 @@ button:hover, .popup-btn:hover {
 }
 
 .popup-content {
-    background-color: white;
+    background-color: #2c2c2e;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
@@ -399,7 +395,7 @@ button:hover, .popup-btn:hover {
 
 .popup-content p {
     font-size: 1.5rem;
-    color: #2d3748;
+    color: #ffffff;
     margin: 0 0 1.5rem 0;
     font-weight: 500;
     width: 100%;
@@ -408,11 +404,11 @@ button:hover, .popup-btn:hover {
 }
 
 .popup-btn {
-    background-color: #c6f6d5;
+    background-color: #007aff;
     padding: 0.8rem 2rem;
     border: none;
     border-radius: 8px;
-    color: #2d3748;
+    color: #ffffff;
     cursor: pointer;
     transition: all 0.2s;
     font-size: 1rem;
@@ -425,14 +421,145 @@ button:hover, .popup-btn:hover {
     bottom: 1rem;
     right: 1rem;
     font-size: 0.9rem;
-    color: #718096;
+    color: #ffffff;
     font-weight: 500;
     opacity: 0.8;
 }
 
 .tasks-container h3, .music-container h3 {
     margin: 0 0 1rem 0;
-    color: #2d3748;
+    color: #ffffff;
     font-weight: 500;
     text-align: center;
+}
+
+.theme-buttons {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 1000;
+}
+
+.theme-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#themeDefault {
+    background-color: #1c1c1e;
+    color: #ffffff;
+}
+
+#themeBlack {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.black-theme {
+    background-color: #1c1c1e;
+    color: #ffffff;
+}
+
+.black-theme .timer-container,
+.black-theme .music-container,
+.black-theme .tasks-container {
+    background-color: #2d2d2d;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.black-theme #timer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.black-theme #taskInput {
+    background-color: #1a1a1a;
+    border-color: #3d3d3d;
+    color: #ffffff;
+}
+
+.black-theme #songSelect {
+    background-color: #1a1a1a;
+    border-color: #3d3d3d;
+    color: #ffffff;
+}
+
+.black-theme .task-content:not(.completed):hover .task-text {
+    color: #808080;
+}
+
+.black-theme .task-content.completed .task-text {
+    color: #808080;
+}
+
+.black-theme #startBtn {
+    background-color: #007aff;
+    color: #ffffff;
+}
+
+.black-theme #startBtn.pause {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.black-theme #resetBtn, .black-theme #breakBtn {
+    background-color: #007aff;
+    color: #ffffff;
+}
+
+.black-theme #playBtn {
+    background-color: #007aff;
+    color: #ffffff;
+}
+
+.black-theme #addTaskBtn {
+    background-color: #007aff;
+    color: #ffffff;
+}
+
+.black-theme .popup-content {
+    background-color: #2c2c2e;
+    color: #ffffff;
+}
+
+.black-theme .popup-btn {
+    background-color: #007aff;
+    color: #ffffff;
+}
+
+.black-theme .credit {
+    color: #808080;
+}
+
+.black-theme #progressSlider {
+    background-color: #3d3d3d;
+}
+
+.black-theme #progressSlider::-webkit-slider-thumb {
+    background-color: #007aff;
+    border-color: #1a1a1a;
+}
+
+.black-theme #progressSlider::-moz-range-thumb {
+    background-color: #007aff;
+    border-color: #1a1a1a;
+}
+
+.black-theme #playBtn::before {
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.black-theme #playBtn.playing::before {
+    background: #ffffff;
+}
+
+#taskInput::placeholder,
+#songSelect::placeholder {
+    color: #808080;
 }
