@@ -8,21 +8,19 @@ const timerDisplay = document.getElementById('timer');
 const startBtn = document.getElementById('startBtn');
 const resetBtn = document.getElementById('resetBtn');
 const breakBtn = document.getElementById('breakBtn');
-
-const WORK_TIME = 25 * 60;  // 25 minutes
-const BREAK_TIME = 5 * 60;   // 5 minutes
+const WORK_TIME = 25 * 60;
+const BREAK_TIME = 5 * 60;
 const playBtn = document.getElementById('playBtn');
 const songSelect = document.getElementById('songSelect');
 const progressSlider = document.getElementById('progressSlider');
-
 const popup = document.getElementById('popup');
 const popupMessage = document.getElementById('popup-message');
 const popupOk = document.getElementById('popup-ok');
-
-// Add these at the top with other DOM element selections
 const taskInput = document.getElementById('taskInput');
 const addTaskBtn = document.getElementById('addTaskBtn');
 const tasksList = document.getElementById('tasksList');
+
+document.body.classList.add('black-theme');
 
 function updateDisplay() {
     const minutes = Math.floor(timeLeft / 60);
@@ -30,7 +28,6 @@ function updateDisplay() {
     timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
-// Core timer logic - handles countdown and state changes
 function startTimer() {
     if (timerId === null) {
         timerId = setInterval(() => {
@@ -75,7 +72,6 @@ function resetTimer() {
     isBreakSession = false;
 }
 
-// Add or modify music options here
 function loadMusicOptions() {
     const musicOptions = [
         { name: "Chill Playlist - 30 minutes", videoId: "Uy1XHMEkKGA"},
@@ -166,13 +162,12 @@ function updateProgressBar() {
     }
 }
 
-// Change alarm sound by updating this videoId
 function playAlarm() {
     if (!alarmPlayer) {
         alarmPlayer = new YT.Player('alarm-player', {
             height: '0',
             width: '0',
-            videoId: 'kcT-i9xzC-8',  // YouTube video ID for alarm sound
+            videoId: 'kcT-i9xzC-8',
             playerVars: {
                 'autoplay': 1,
                 'controls': 0
@@ -254,7 +249,6 @@ progressSlider.addEventListener('input', () => {
 
 loadMusicOptions();
 
-// Add these functions at the bottom before the event listeners
 function addTask() {
     const taskText = taskInput.value.trim();
     if (taskText) {
@@ -266,12 +260,10 @@ function addTask() {
             </div>
         `;
         
-        // Add event listeners for the buttons
         const deleteBtn = li.querySelector('.delete-btn');
         const taskContent = li.querySelector('.task-content');
         
         taskContent.addEventListener('click', (e) => {
-            // Don't toggle if clicking the delete button
             if (!e.target.classList.contains('delete-btn')) {
                 taskContent.classList.toggle('completed');
             }
@@ -286,7 +278,6 @@ function addTask() {
     }
 }
 
-// Add these event listeners with the others at the bottom
 addTaskBtn.addEventListener('click', addTask);
 taskInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
