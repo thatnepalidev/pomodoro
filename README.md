@@ -13,6 +13,8 @@ For a productivity boost, [Click here](https://thatnepalidev.github.io/pomodoro/
 - ✅ **To-Do Task List**: Add and manage tasks to stay organized and track progress
 
 ## Screenshot
+![image](https://github.com/user-attachments/assets/2c55fb62-e46e-468b-aaf2-e95892f3abeb)
+
 
 ## Frontend
 <div align="left">
