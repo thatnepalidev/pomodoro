@@ -12,9 +12,7 @@ For a productivity boost, [Click here](https://thatnepalidev.github.io/pomodoro/
 - ☕ **Break Timer**: 5-minute break sessions
 - ✅ **To-Do Task List**: Add and manage tasks to stay organized and track progress
 
-## Demo
-![image](https://github.com/user-attachments/assets/3fa3cba4-51b4-4c97-adba-182760d2cc42)
-![image](https://github.com/user-attachments/assets/1bdf08c1-7566-40a6-94c4-51c67de5ef7a)
+## Screenshot
 
 ## Frontend
 <div align="left">
