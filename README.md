@@ -8,8 +8,8 @@ For a productivity boost, [Click here](https://thatnepalidev.github.io/pomodoro/
  
 ## Features
 - ⏲️ **25-Minute Timer**: Standard Pomodoro session length for optimal productivity
-- 🎵 **Music Player**: Built-in audio player with your choice of background music
 - ☕ **Break Timer**: 5-minute break sessions
+- 🎵 **Music Player**: Built-in audio player with your choice of background music
 - ✅ **To-Do Task List**: Add and manage tasks to stay organized and track progress
 
 <img width="700" src="https://github.com/user-attachments/assets/83732711-c0e5-4037-b14f-702df44dc419">
