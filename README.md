@@ -25,5 +25,5 @@ For a productivity boost, [Click here](https://thatnepalidev.github.io/pomodoro/
 </div>
 
 ## Author
-- GitHub: [@uniqueacharya](https://github.com/uniqueacharya)
+- GitHub: [@thatnepalidev](https://github.com/thatnepalidev)
 - LinkedIn: [@unique-acharya](https://linkedin.com/in/unique-acharya)
