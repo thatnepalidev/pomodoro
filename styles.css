@@ -3,8 +3,8 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1c1c1e;
-    color: #ffffff;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
     position: relative;
 }
 
@@ -29,9 +29,9 @@ body {
 .timer-container, .music-container, .tasks-container {
     text-align: center;
     padding: 2rem;
-    background-color: #2c2c2e;
+    background-color: #141414;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .tasks-container {
@@ -55,24 +55,28 @@ body {
 #taskInput {
     padding: 0.8rem;
     border-radius: 8px;
-    border: 1px solid #3d3d3d;
+    border: 1px solid #1a1a1a;
     flex: 1;
-    color: #ffffff;
-    background-color: #3a3a3c;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
     font-size: 0.95rem;
     outline: none;
 }
 
 #taskInput:focus {
-    border: 1px solid #5c5c5e;
+    border: 1px solid #2d2d2d;
 }
 
 #addTaskBtn {
     width: 80px;
-    background-color: #007aff;
+    background-color: #2563eb;
     height: 45px;
     padding: 0;
-    color: #ffffff;
+    color: #e0e0e0;
+}
+
+#addTaskBtn:hover {
+    background-color: #1d4ed8;
 }
 
 #tasksList {
@@ -91,18 +95,16 @@ body {
 }
 
 #tasksList::-webkit-scrollbar-track {
-    background: #3a3a3c;
-    border-radius: 4px;
+    background: #1a1a1a;
 }
 
 #tasksList::-webkit-scrollbar-thumb {
-    background-color: #cbd5e0;
-    border-radius: 4px;
-    border: 2px solid #3a3a3c;
+    background-color: #2d2d2d;
+    border: 2px solid #1a1a1a;
 }
 
 #tasksList::-webkit-scrollbar-thumb:hover {
-    background-color: #a0aec0;
+    background-color: #4a4a4a;
 }
 
 #tasksList li {
@@ -130,8 +132,10 @@ body {
 }
 
 .task-content.completed .task-text {
-    color: #808080;
+    color: #666666;
     text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    opacity: 0.7;
 }
 
 .task-content:not(.completed):hover .task-text {
@@ -151,8 +155,8 @@ body {
 }
 
 .delete-btn {
-    background-color: #ff3b30;
-    color: #ffffff;
+    background-color: #dc2626;
+    color: #e0e0e0;
     border: none;
     border-radius: 50%;
     width: 24px;
@@ -165,7 +169,7 @@ body {
 }
 
 .delete-btn:hover {
-    background-color: #c53030;
+    background-color: #b91c1c;
 }
 
 #timer {
@@ -173,11 +177,11 @@ body {
     margin-bottom: 1rem;
     height: 70px;
     line-height: 70px;
-    background-color: #3a3a3c;
+    background-color: #1a1a1a;
     border-radius: 12px;
     padding: 0.5rem;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
-    color: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #e0e0e0;
 }
 
 .buttons {
@@ -192,7 +196,7 @@ button {
     font-size: 1.1rem;
     border: none;
     border-radius: 8px;
-    color: #ffffff;
+    color: #e0e0e0;
     cursor: pointer;
     transition: all 0.2s;
     width: 90px;
@@ -210,7 +214,7 @@ button:hover, .popup-btn:hover {
 }
 
 #startBtn {
-    background-color: #007aff;
+    background-color: #2563eb;
 }
 
 #startBtn.pause {
@@ -218,12 +222,12 @@ button:hover, .popup-btn:hover {
 }
 
 #resetBtn, #breakBtn {
-    background-color: #007aff;
+    background-color: #2563eb;
 }
 
 .music-container h3 {
     margin: 0 0 1rem 0;
-    color: #ffffff;
+    color: #e0e0e0;
     font-weight: 500;
 }
 
@@ -236,10 +240,10 @@ button:hover, .popup-btn:hover {
 #songSelect {
     padding: 0.8rem;
     border-radius: 8px;
-    border: 1px solid #3d3d3d;
+    border: 1px solid #1a1a1a;
     width: 100%;
-    color: #ffffff;
-    background-color: #3a3a3c;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
     font-size: 0.95rem;
 }
 
@@ -253,7 +257,7 @@ button:hover, .popup-btn:hover {
 
 #songSelect:focus {
     outline: none;
-    border-color: #5c5c5e;
+    border-color: #2d2d2d;
 }
 
 .player-controls {
@@ -265,7 +269,7 @@ button:hover, .popup-btn:hover {
 }
 
 #playBtn {
-    background-color: #007aff;
+    background-color: #2563eb;
     width: 45px;
     height: 45px;
     padding: 0;
@@ -313,7 +317,7 @@ button:hover, .popup-btn:hover {
     height: 4px;
     -webkit-appearance: none;
     appearance: none;
-    background: #3d3d3d;
+    background: #1a1a1a;
     border-radius: 2px;
     outline: none;
     cursor: pointer;
@@ -329,10 +333,10 @@ button:hover, .popup-btn:hover {
     -webkit-appearance: none;
     width: 12px;
     height: 12px;
-    background: #007aff;
+    background: #2563eb;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid #1a1a1a;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -340,10 +344,10 @@ button:hover, .popup-btn:hover {
 #progressSlider::-moz-range-thumb {
     width: 12px;
     height: 12px;
-    background: #007aff;
+    background: #2563eb;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid #1a1a1a;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -382,7 +386,7 @@ button:hover, .popup-btn:hover {
 }
 
 .popup-content {
-    background-color: #2c2c2e;
+    background-color: #141414;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
@@ -397,7 +401,7 @@ button:hover, .popup-btn:hover {
 
 .popup-content p {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #e0e0e0;
     margin: 0 0 1.5rem 0;
     font-weight: 500;
     width: 100%;
@@ -406,11 +410,11 @@ button:hover, .popup-btn:hover {
 }
 
 .popup-btn {
-    background-color: #007aff;
+    background-color: #2563eb;
     padding: 0.8rem 2rem;
     border: none;
     border-radius: 8px;
-    color: #ffffff;
+    color: #e0e0e0;
     cursor: pointer;
     transition: all 0.2s;
     font-size: 1rem;
@@ -423,12 +427,12 @@ button:hover, .popup-btn:hover {
     bottom: 1rem;
     right: 1rem;
     font-size: 0.9rem;
-    color: #ffffff;
+    color: #808080;
 }
 
 .tasks-container h3, .music-container h3 {
     margin: 0 0 1rem 0;
-    color: #ffffff;
+    color: #e0e0e0;
     font-weight: 500;
     text-align: center;
 }
@@ -444,7 +448,7 @@ button:hover, .popup-btn:hover {
 
 .theme-btn {
     padding: 0.5rem 1rem;
-    border: 2px solid #ffffff;
+    border: 2px solid #e0e0e0;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -452,42 +456,32 @@ button:hover, .popup-btn:hover {
 }
 
 #themeDefault {
-    background-color: #1c1c1e;
-    color: #ffffff;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
 }
 
 #themeBlack {
     background-color: #1a1a1a;
-    color: white;
+    color: #e0e0e0;
 }
 
 .black-theme {
-    background-color: #1c1c1e;
-    color: #ffffff;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
 }
 
 .black-theme .timer-container,
 .black-theme .music-container,
 .black-theme .tasks-container {
-    background-color: #2d2d2d;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: #141414;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-.black-theme #timer {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-.black-theme #taskInput {
-    background-color: #1a1a1a;
-    border-color: #3d3d3d;
-    color: #ffffff;
-}
-
+.black-theme #timer,
+.black-theme #taskInput,
 .black-theme #songSelect {
     background-color: #1a1a1a;
-    border-color: #3d3d3d;
-    color: #ffffff;
+    color: #e0e0e0;
 }
 
 .black-theme .task-content:not(.completed):hover .task-text {
@@ -495,42 +489,45 @@ button:hover, .popup-btn:hover {
 }
 
 .black-theme .task-content.completed .task-text {
-    color: #808080;
+    color: #666666;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    opacity: 0.7;
 }
 
 .black-theme #startBtn {
-    background-color: #007aff;
-    color: #ffffff;
+    background-color: #2563eb;
+    color: #e0e0e0;
 }
 
 .black-theme #startBtn.pause {
     background-color: #333333;
-    color: #ffffff;
+    color: #e0e0e0;
 }
 
 .black-theme #resetBtn, .black-theme #breakBtn {
-    background-color: #007aff;
-    color: #ffffff;
+    background-color: #2563eb;
+    color: #e0e0e0;
 }
 
 .black-theme #playBtn {
-    background-color: #007aff;
-    color: #ffffff;
+    background-color: #2563eb;
+    color: #e0e0e0;
 }
 
 .black-theme #addTaskBtn {
-    background-color: #007aff;
-    color: #ffffff;
+    background-color: #2563eb;
+    color: #e0e0e0;
 }
 
 .black-theme .popup-content {
-    background-color: #2c2c2e;
-    color: #ffffff;
+    background-color: #141414;
+    color: #e0e0e0;
 }
 
 .black-theme .popup-btn {
-    background-color: #007aff;
-    color: #ffffff;
+    background-color: #2563eb;
+    color: #e0e0e0;
 }
 
 .black-theme .credit {
@@ -538,25 +535,60 @@ button:hover, .popup-btn:hover {
 }
 
 .black-theme #progressSlider {
-    background-color: #3d3d3d;
+    background-color: #1a1a1a;
 }
 
 .black-theme #progressSlider::-webkit-slider-thumb {
-    background-color: #007aff;
+    background-color: #2563eb;
     border-color: #1a1a1a;
 }
 
 .black-theme #progressSlider::-moz-range-thumb {
-    background-color: #007aff;
+    background-color: #2563eb;
     border-color: #1a1a1a;
 }
 
 .black-theme #playBtn::before {
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent #e0e0e0;
 }
 
 .black-theme #playBtn.playing::before {
-    background: #ffffff;
+    background: #e0e0e0;
+}
+
+#taskInput::placeholder,
+#songSelect::placeholder {
+    color: #808080;
+}
+
+.black-theme .task-item {
+    background-color: #3a3a3c;
+    color: #e0e0e0;
+    border: 1px solid #48484a;
+}
+
+.black-theme .task-content:not(.completed):hover .task-text {
+    color: #e5e5ea;
+}
+
+.black-theme .task-content.completed .task-text {
+    color: #8e8e93;
+}
+
+.black-theme #playBtn::before {
+    border-color: transparent transparent transparent #e0e0e0;
+}
+
+.black-theme #playBtn.playing::before {
+    background: #e0e0e0;
+}
+
+.black-theme .delete-btn {
+    color: #dc2626;
+}
+
+.black-theme .delete-btn:hover {
+    color: #ff453a;
 }
 
 #taskInput::placeholder,
